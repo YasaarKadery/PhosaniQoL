@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# Phosani's QoL
+Plugin that make's learning Phosani's nightmare easier.
