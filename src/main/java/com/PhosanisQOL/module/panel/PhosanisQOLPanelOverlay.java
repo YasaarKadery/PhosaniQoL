@@ -1,4 +1,4 @@
-package com.PhosanisQOL;
+package com.PhosanisQOL.module.panel;
 
 import com.google.inject.Inject;
 import net.runelite.api.Client;
@@ -8,11 +8,11 @@ import net.runelite.client.ui.overlay.components.LineComponent;
 
 import java.awt.*;
 
-public class PhosanisQOLOverlay extends OverlayPanel {
+public class PhosanisQOLPanelOverlay extends OverlayPanel {
     private final Client client;
 
     @Inject
-    private PhosanisQOLOverlay(Client client) {
+    private PhosanisQOLPanelOverlay(Client client) {
         this.client = client;
     }
 
@@ -21,7 +21,7 @@ public class PhosanisQOLOverlay extends OverlayPanel {
         panelComponent.getChildren().clear();
 
         panelComponent.getChildren().add((LineComponent.builder())
-                .left("You need to drink a sanfew")
+                .left("You need to drink a sanfew!")
                 .build());
 
         if (client.getGameCycle() % 40 >= 20)
